@@ -9,7 +9,7 @@ class Player:
 
     def __init__(self, playerNo):
         self.playerNumber = playerNo
-        self.playerName = input("Player " + str(self.playerNumber+1) + ", Please Enter Your Name")
+        self.playerName = input("Player " + str(self.playerNumber+1) + ", Please Enter Your Name:   ")
 
     def dealCard(self, card):
         self.hand.append(card)

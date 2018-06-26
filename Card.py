@@ -1,6 +1,7 @@
 class Card:
-    maxHealth = 5
-    health = 5
+    maxHealth = 0
+    health = 0
+    played = False
 
     def __init__(self, maxhlth):
         self.maxHealth = maxhlth
@@ -11,3 +12,7 @@ class Card:
 
     def applyDmg(self, dmg):
         self.health -= dmg
+
+    def setPlayed(self):
+        self.played = True
+
